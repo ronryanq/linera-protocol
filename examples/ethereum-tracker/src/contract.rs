@@ -34,7 +34,7 @@ impl Contract for EthereumTrackerContract {
     async fn load(runtime: ContractRuntime<Self>) -> Self {
         let state = EthereumTrackerState::load(runtime.root_view_storage_context())
             .await
-            .expect("Failed to load state");
+            .expect("xFailed to load statex");
         EthereumTrackerContract { state, runtime }
     }
 
